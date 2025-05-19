@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação de Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-200 flex items-center justify-center h-screen">
+
+    <div class="w-full max-w-3xl bg-white rounded-lg shadow-xl overflow-hidden p-8">
+
+        <header class="mb-6 text-center">
+            <h1 class="text-3xl font-semibold text-gray-800">Automação de Chat</h1>
+            <p class="text-gray-600 mt-2">Interaja com nossos sistemas automatizados de maneira fácil e rápida!</p>
+        </header>
+
+        <div class="space-y-6">
+
+            <div class="space-y-4">
+                <h2 class="text-xl font-semibold text-gray-800">Escolha uma ação</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Iniciar Assistente Virtual
+                    </button>
+                    <button class="bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        Agendar Tarefa
+                    </button>
+                    <button class="bg-yellow-600 text-white py-2 rounded-lg hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        Consultar Status
+                    </button>
+                    <button class="bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">
+                        Cancelar Tarefa
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold text-gray-800">Submeta uma nova tarefa</h2>
+                <form class="space-y-4 mt-4">
+                    <div>
+                        <label for="taskName" class="block text-gray-600">Nome da Tarefa</label>
+                        <input type="text" id="taskName" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ex: Responder e-mails">
+                    </div>
+                    <div>
+                        <label for="taskDetails" class="block text-gray-600">Detalhes da Tarefa</label>
+                        <textarea id="taskDetails" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Descreva o que precisa ser feito"></textarea>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Submeter Tarefa
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="mt-8 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Automação de Chat. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
